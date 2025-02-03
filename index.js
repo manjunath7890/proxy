@@ -27,6 +27,10 @@ app.get("/firmware", async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) => {
+    res.send("hello proxy");
+});
+
 // Start Server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
